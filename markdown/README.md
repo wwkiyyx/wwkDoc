@@ -112,7 +112,7 @@ public static void main(string[] args)
   [1]: http://www.google.com/
   [runoob]: http://www.runoob.com/
 
-![RUNOOB 图标](https://www.easyicon.net/api/resizeApi.php?id=1107313&size=128)
+![RUNOOB 图标](https://gitee.com/wwkiyyx/wwkDoc/blob/master/markdown/20120810102406_ZhWG5.jpeg)
 
 ![RUNOOB 图标](https://www.easyicon.net/api/resizeApi.php?id=1107313&size=128 "RUNOOB")
 

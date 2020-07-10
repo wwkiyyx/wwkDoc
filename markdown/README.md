@@ -112,16 +112,16 @@ public static void main(string[] args)
   [1]: http://www.google.com/
   [runoob]: http://www.runoob.com/
 
-![RUNOOB 图标](https://github.com/wwkiyyx/wwkDoc/blob/master/markdown/20120810102406_ZhWG5.jpeg)
+![RUNOOB 图标](https://www.easyicon.net/api/resizeApi.php?id=1107313&size=128)
 
-![RUNOOB 图标](https://github.com/wwkiyyx/wwkDoc/blob/master/markdown/20120810102406_ZhWG5.jpeg "RUNOOB")
+![RUNOOB 图标](https://www.easyicon.net/api/resizeApi.php?id=1107313&size=128 "RUNOOB")
 
 这个链接用 9 作为网址变量 [RUNOOB][9].
 然后在文档的结尾为变量赋值（网址）
 
-[9]: https://github.com/wwkiyyx/wwkDoc/blob/master/markdown/20120810102406_ZhWG5.jpeg
+[9]: https://www.easyicon.net/api/resizeApi.php?id=1107313&size=128
 
-<img src="https://github.com/wwkiyyx/wwkDoc/blob/master/markdown/20120810102406_ZhWG5.jpeg" width="50%">
+<img src="https://www.easyicon.net/api/resizeApi.php?id=1107313&size=128" width="50%">
 
 |  表头   | 表头  |
 |  ----  | ----  |

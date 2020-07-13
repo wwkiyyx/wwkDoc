@@ -38,8 +38,9 @@ jdk-8u231-windows-x64.exe
 创建 Spring Boot 项目 <kbd>Debug</kbd>  
 spring boot 网站创建项目模板 加入Action映射 mvnw spring-boot:start  
 maven.zip path=bin  
-mvn clean pkg  
-mvn spring-boot:start
+mvn clean pkg  生成  
+mvn install  安装  
+mvn spring-boot:start  启动  
 
 # .Net Core
 

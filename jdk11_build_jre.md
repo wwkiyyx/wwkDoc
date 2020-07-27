@@ -1,0 +1,1 @@
+jlink.exe --module-path jmods --add-modules java.desktop --output jre

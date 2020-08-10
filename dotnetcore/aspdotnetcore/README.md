@@ -1,13 +1,13 @@
-Razor Pages
+# Razor Pages
 
-MVC
+# MVC
 
-Web API
+# Web API
 
-SignalR
+# SignalR
 
-gRPC
+# gRPC
 
-EntityFramework(EF) Core
+# EntityFramework(EF) Core
 
-asp dotnet core api
+# asp dotnet core api

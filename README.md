@@ -40,6 +40,7 @@ spring boot 网站创建项目模板 加入Action映射 mvnw spring-boot:start
 maven.zip path=bin  
 mvn clean pkg  生成  
 mvn install  安装  
+cd main  
 mvn spring-boot:start  启动  
 
 # .Net Core

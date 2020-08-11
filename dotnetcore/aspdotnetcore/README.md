@@ -118,7 +118,78 @@ namespace RazorPagesMovie.Models
         public decimal Price { get; set; }
     }
 }
+```   
+
+```C#
+public class IndexModel : PageModel
+{
+    private readonly RazorPagesMovie.Data.RazorPagesMovieContext _context;
+
+    public IndexModel(RazorPagesMovie.Data.RazorPagesMovieContext context)
+    {
+        _context = context;
+    }
+
+    public IList<Movie> Movie { get; set; }
+    [BindProperty(SupportsGet = true)]
+    public string SearchString { get; set; }
+    // Requires using Microsoft.AspNetCore.Mvc.Rendering;
+    public SelectList Genres { get; set; }
+    [BindProperty(SupportsGet = true)]
+    public string MovieGenre { get; set; }
+```   
+
+```C#
+public async Task OnGetAsync()
+{
+    // Use LINQ to get list of genres.
+    IQueryable<string> genreQuery = from m in _context.Movie
+                                    orderby m.Genre
+                                    select m.Genre;
+
+    var movies = from m in _context.Movie
+                 select m;
+
+    if (!string.IsNullOrEmpty(SearchString))
+    {
+        movies = movies.Where(s => s.Title.Contains(SearchString));
+    }
+
+    if (!string.IsNullOrEmpty(MovieGenre))
+    {
+        movies = movies.Where(x => x.Genre == MovieGenre);
+    }
+    Genres = new SelectList(await genreQuery.Distinct().ToListAsync());
+    Movie = await movies.ToListAsync();
+}
 ```
+
+@page
+@model RazorPagesMovie.Pages.Movies.IndexModel
+
+@{
+    ViewData["Title"] = "Index";
+}
+
+<h1>Index</h1>
+
+<p>
+    <a asp-page="Create">Create New</a>
+</p>
+
+<form>
+    <p>
+        <select asp-for="MovieGenre" asp-items="Model.Genres">
+            <option value="">All</option>
+        </select>
+        Title: <input type="text" asp-for="SearchString" />
+        <input type="submit" value="Filter" />
+    </p>
+</form>
+
+<table class="table">
+    @*Markup removed for brevity.*@   
+
 
 
 # MVC

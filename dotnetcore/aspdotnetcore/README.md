@@ -91,7 +91,13 @@ dotnet ef migrations add InitialCreate
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-page="/Privacy">Privacy</a>
-                        </li>
+                        </li>   
+
+DB Browser for SQLite <https://sqlitebrowser.org/>   
+
+![DB Browser for SQLite](https://images.gitee.com/uploads/images/2020/0811/164951_c01f0cff_7799879.png)   
+
+
 
 # MVC
 

@@ -164,32 +164,33 @@ public async Task OnGetAsync()
 }
 ```
 
-@page
+```html
+@page   
 @model RazorPagesMovie.Pages.Movies.IndexModel
 
-@{
+@{   
     ViewData["Title"] = "Index";
-}
+}   
 
 <h1>Index</h1>
 
-<p>
+<p>   
     <a asp-page="Create">Create New</a>
-</p>
+</p>   
 
-<form>
-    <p>
-        <select asp-for="MovieGenre" asp-items="Model.Genres">
-            <option value="">All</option>
-        </select>
-        Title: <input type="text" asp-for="SearchString" />
-        <input type="submit" value="Filter" />
-    </p>
-</form>
+<form>   
+    <p>   
+        <select asp-for="MovieGenre" asp-items="Model.Genres">   
+            <option value="">All</option>   
+        </select>   
+        Title: <input type="text" asp-for="SearchString" />   
+        <input type="submit" value="Filter" />   
+    </p>   
+</form>   
 
-<table class="table">
-    @*Markup removed for brevity.*@   
-
+<table class="table">   
+    @*Markup removed for brevity.*@      
+```
 
 
 # MVC

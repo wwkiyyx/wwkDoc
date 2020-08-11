@@ -19,3 +19,30 @@ dotnet publish --configuration Release
 
 dotnet HelloWorld.dll   
 
+
+dotnet new sln   
+
+dotnet new classlib -o StringLibrary   
+
+dotnet sln add StringLibrary/StringLibrary.csproj   
+
+
+```C#
+using System;
+
+namespace UtilityLibraries
+{
+    public static class StringLibrary
+    {
+        public static bool StartsWithUpper(this String str)
+        {
+            if (String.IsNullOrWhiteSpace(str))
+                return false;
+
+            Char ch = str[0];
+            return Char.IsUpper(ch);
+        }
+    }
+}
+```   
+

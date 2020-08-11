@@ -194,4 +194,40 @@ namespace json
     }
 }
 
-```
+```   
+
+dotnet --version   
+
+dotnet --infor   
+
+dotnet --list-runtimes   
+
+dotnet --list-sdks   
+
+dotnet <COMMAND> [-d|--diagnostics] [-h|--help] [--verbosity <LEVEL>]
+    [command-options] [arguments]   
+
+dotnet [--additionalprobingpath <PATH>] [--additional-deps <PATH>]
+    [--fx-version <VERSION>]  [--roll-forward <SETTING>]
+    <PATH_TO_APPLICATION> [arguments]
+
+dotnet exec [--additionalprobingpath] [--additional-deps <PATH>]
+    [--fx-version <VERSION>]  [--roll-forward <SETTING>]
+    <PATH_TO_APPLICATION> [arguments]   
+
+dotnet build [<PROJECT>|<SOLUTION>] [-c|--configuration <CONFIGURATION>]
+    [-f|--framework <FRAMEWORK>] [--force] [--interactive] [--no-dependencies]
+    [--no-incremental] [--no-restore] [--nologo] [-o|--output <OUTPUT_DIRECTORY>]
+    [-r|--runtime <RUNTIME_IDENTIFIER>] [--source <SOURCE>]
+    [-v|--verbosity <LEVEL>] [--version-suffix <VERSION_SUFFIX>]
+
+dotnet build -h|--help   
+
+dotnet run [-c|--configuration <CONFIGURATION>] [-f|--framework <FRAMEWORK>]
+    [--force] [--interactive] [--launch-profile <NAME>] [--no-build]
+    [--no-dependencies] [--no-launch-profile] [--no-restore]
+    [-p|--project <PATH>] [-r|--runtime <RUNTIME_IDENTIFIER>]
+    [-v|--verbosity <LEVEL>] [[--] [application arguments]]
+
+dotnet run -h|--help
+

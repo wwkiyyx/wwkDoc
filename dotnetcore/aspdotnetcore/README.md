@@ -261,10 +261,35 @@ app.UseEndpoints(endpoints =>
 
 # Web API
 
+dotnet new webapi -o TodoApi   
+cd TodoApi   
+dotnet add package Microsoft.EntityFrameworkCore.SqlServer   
+dotnet add package Microsoft.EntityFrameworkCore.InMemory   
+code -r ../TodoApi   
+
+<https://localhost:5001/WeatherForecast>   
+
+
+
 # SignalR
 
-# gRPC
+dotnet new webapp -o SignalRChat    
+code -r SignalRChat   
 
+dotnet tool install -g Microsoft.Web.LibraryManager.Cli    
+
+libman install @microsoft/signalr@latest -p unpkg -d wwwroot/js/signalr --files dist/browser/signalr.js --files dist/browser/signalr.min.js   
+
+dotnet watch run -p SignalRChat.csproj   
+
+
+
+# gRPC   
+
+dotnet new grpc -o GrpcGreeter   
+code -r GrpcGreeter   
+
+  
 # EntityFramework(EF) Core
 
 # asp dotnet core api

@@ -193,7 +193,71 @@ public async Task OnGetAsync()
 ```
 
 
-# MVC
+# MVC   
+
+dotnet new mvc -o MvcMovie   
+code -r MvcMovie   
+
+dotnet dev-certs https --trust
+
+```C#
+using Microsoft.AspNetCore.Mvc;
+using System.Text.Encodings.Web;
+
+namespace MvcMovie.Controllers
+{
+    public class HelloWorldController : Controller
+    {
+        // 
+        // GET: /HelloWorld/
+
+        public string Index()
+        {
+            return "This is my default action...";
+        }
+
+        // 
+        // GET: /HelloWorld/Welcome/ 
+
+        public string Welcome()
+        {
+            return "This is the Welcome action method...";
+        }
+    }
+}
+```
+
+<https://localhost:5001/Helloworld/welcome>   
+
+```C#
+// GET: /HelloWorld/Welcome/ 
+// Requires using System.Text.Encodings.Web;
+public string Welcome(string name, int numTimes = 1)
+{
+    return HtmlEncoder.Default.Encode($"Hello {name}, NumTimes is: {numTimes}");
+}
+```
+
+<https://localhost:{PORT}/HelloWorld/Welcome?name=Rick&numtimes=4>   
+
+```C#
+public string Welcome(string name, int ID = 1)
+{
+    return HtmlEncoder.Default.Encode($"Hello {name}, ID: {ID}");
+}
+```
+
+<https://localhost:{PORT}/HelloWorld/Welcome/3?name=Rick>   
+
+```C#
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapControllerRoute(
+        name: "default",
+        pattern: "{controller=Home}/{action=Index}/{id?}");
+});
+```
+
 
 # Web API
 

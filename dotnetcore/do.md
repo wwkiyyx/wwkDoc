@@ -11,4 +11,11 @@ dotnet run
             Console.WriteLine($"\nHello, {name}, on {date:d} at {date:t}!");
             Console.Write("\nPress any key to exit...");
             Console.ReadKey(true);
-```
+```   
+
+dotnet run --configuration Release   
+
+dotnet publish --configuration Release   
+
+dotnet HelloWorld.dll   
+

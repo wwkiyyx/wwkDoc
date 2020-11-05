@@ -10,7 +10,7 @@ My docment
 |  ----  | ----  |  ----  | ----  |  ----  | ----  |
 |  console   | hello  |  hello  |  hello  |  hello  | hello  |
 |  window   | winforms  |    |  wxwidgets  |  electron  |   |
-|  webapp   | webapp<br>mvc  |  spring boot  |    |  express  |   |
+|  webapp   | webapp<br>mvc  |  spring boot  |    |  express  | django  |
 
 # VS Code
 
@@ -84,6 +84,7 @@ electron/resources/app
 ├── package.json  
 ├── main.js  
 └── index.html  
+npm install express
 
 # Python
 
@@ -91,6 +92,7 @@ electron/resources/app
 python-3.8.3-amd64.exe  
 <kbd>Debug</kbd> hello.py  
 python3 hello.py  
+pip install django、tensorflow、torch、paddlepaddle、jupyterlab
 
 # MySQL
 
